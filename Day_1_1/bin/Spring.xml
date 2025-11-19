@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "Spring-beanDTD.dtd" >
+<beans>
+<bean id="emp1" class="com.demo.bean.Employee"></bean>
+
+<bean id="emp2" class="com.demo.bean.Employee">
+	<property name="empno" value="111"></property>
+	<property name="name" value="ABC"></property>
+	<property name="salary" value="55555"></property>
+</bean>
+<bean id="emp3" class="com.demo.bean.Employee">
+	<constructor-arg type="int" value="112"></constructor-arg>
+	<constructor-arg type="double" value="55555.55"></constructor-arg>
+	<constructor-arg type="java.lang.String" value="PQR"></constructor-arg>
+</bean>
+<bean id="emp4" class="com.demo.bean.Employee">
+	<constructor-arg index="0" value="1"></constructor-arg>
+	<constructor-arg index="1" value="XYZ"></constructor-arg>
+	<constructor-arg index="2" value="66666.55"></constructor-arg>
+</bean>
+<bean id="emp5" class="com.demo.bean.Employee">
+	<constructor-arg index="0" value="2"></constructor-arg>
+	<constructor-arg index="1" value="AAA"></constructor-arg>
+	
+</bean>
+</beans>
