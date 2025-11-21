@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "Spring-beanDTD.dtd" >
+<beans>
+<bean id="location" class="com.demo.bean.Address">
+	<constructor-arg index="0" value="MALEGAON"></constructor-arg>
+	<constructor-arg index="1" value="423105"> </constructor-arg>
+</bean>
+
+<bean id="emp4" class="com.demo.bean.Employee" autowire="byName">
+	<property name="empno" value="114"></property>
+<property name="name" value="AAA"></property>
+</bean>
+
+
+</beans>

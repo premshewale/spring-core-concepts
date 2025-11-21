@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE beans SYSTEM "Spring-beanDTD.dtd" >
+<beans>
+<bean id="emp1" class="com.demo.bean.Employee" >
+<property name="empno" value="111"></property>
+<property name="name" value="ABC"></property>
+
+<property name="location">
+	<bean id="a1" class="com.demo.bean.Address">
+	<property name="city" value="Pune"></property>
+	<property name="pin" value="300214"></property>
+	</bean>
+</property>
+</bean>
+
+
+</beans>
